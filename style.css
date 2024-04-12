@@ -1,0 +1,310 @@
+/* Estilo general */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6,p {
+    color: white;
+}
+/* Contenedor de secciones */
+
+.contenedor-secciones {
+    display: flex;
+    height: 100vh; /* Aquí se establece la altura del contenedor al 100% de la altura de la ventana */
+    width: 100%; /* Esto asegura que las secciones se apilen verticalmente */
+}
+
+.contenedor-seccion1,
+.contenedor-seccion2,
+.contenedor-seccion3 {
+    flex: 1;
+    display: flex;
+    background-color: #142345;
+}
+
+/* Secciones */
+
+section {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+}
+
+.seccion-1 {
+    width: 90%;
+    position: static;
+}
+
+.seccion-2 {
+    width: 90%;
+}
+
+.seccion-3 {
+    width: 90%;
+    position: static;
+}
+
+/* Aca va el CSS de section 1 */
+
+.logo {
+        background-color: #0B101A; /* Color de fondo del perfil */
+        border-radius: 10px; /* Bordes redondeados */
+        margin: 5px; /* Espacio entre el contenido de la sección y el perfil */
+        height: auto;
+        width: auto;
+        display: flex;
+        border: 2px solid #ccc;
+    }
+
+.nombre-logo{
+    margin: auto;
+}
+.nombre-logo h1 {
+    color: white;
+}
+/* Estilo del contenedor del searchbox */
+.contenedor-searchbox {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo del searchbox */
+#searchbox {
+    width: 90%;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+
+/* Estilo del contenedor de los botones */
+.contenedor-botones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-gap: 10px; /* Espacio entre los botones */
+}
+
+/* Estilo de los botones de check */
+.contenedor-botones .check {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #212936;
+    cursor: pointer;
+    
+}
+
+/* Estilo del checkbox */
+.contenedor-botones .check input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Estilo de los botones de check al pasar el cursor */
+.contenedor-botones .check:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilo del contenedor de "Acerca de nosotros" */
+.acerca-de-nosotros {
+    display: grid;
+    text-align: center;
+}
+.facebook, .instagram, .nosotros{
+    margin: 5px;
+    background-color: #212936;
+    width: auto;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+}
+/* Estilo de los botones */
+.facebook, .instagram, .nosotros {
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+}
+
+/* Estilo de los botones al pasar el cursor */
+.facebook:hover {
+    background-color: #906fc5;
+}
+.instagram:hover {
+    background-color: #906fc5;
+}
+.nosotros:hover {
+    background-color: #906fc5;
+}
+
+.acerca-de-nosotros a {
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    color: white; /* Set the text color to white */
+    font-size: 18px;
+}
+.nosotros p{
+    margin-bottom: 10px;
+}
+label{
+    color: white;
+}
+
+
+/* Aca termina el CSS de section 1 */
+
+
+/* Aca va el CSS de section 2 */
+
+/* Estilo de las publicaciones */
+.publicacion {
+    background-color: #3C5598;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Estilo de la descripción de la publicación */
+.descripcion {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.descripcion img {
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 60px;
+    margin-left: 100px;
+}
+
+/* Estilo de la imagen de la publicación */
+
+.imagen{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+/* Estilo de las interacciones de la publicación */
+.interacciones {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.icono-me-gusta{
+    margin: 10px;
+    margin-left: 40px;
+}
+.icono-comentar{
+    margin: 10px;
+    margin-left: 100px;
+}
+.icono-compartir{
+    margin: 10px;
+}
+.contenido-scroll {
+    max-height: 620px; /* Altura máxima del contenido */
+    overflow-y: auto; /* Agrega desplazamiento vertical cuando sea necesario */
+}
+::-webkit-scrollbar {
+    width: 8px; /* Ancho del scrollbar */
+}
+
+
+
+/* Aca va el CSS de section 3 */
+
+.perfil {
+    background-color: #0B101A; /* Color de fondo del perfil */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    margin: 5px; /* Espacio entre el contenido de la sección y el perfil */
+    height: 50px;
+    width: auto;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+    align-content: center;
+    border: 2px solid #ccc;
+}
+.perfil H3 {
+    margin: 5px;
+    font-size: 14px;
+}
+.image img {
+    margin: 5px;
+    height: 80px;
+    width: 80px;
+    border-radius: 60px;
+    margin-left: 170px;
+}
+.buzon{
+    background-color: #0B101A; /* Color de fondo del perfil */
+    border-radius: 10px; /* Bordes redondeados */
+    height: 50px;
+    width: 60%;
+    margin-left: 155px;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+}
+.buzon H3 {
+    margin: 5px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.mensajeria{
+    background-color: #0B101A; /* Color de fondo del perfil */
+    border-radius: 10px; /* Bordes redondeados */
+    height: auto;
+    width: auto;
+    align-items: center;
+    align-content: center;
+    border: 2px solid #ccc;
+}
+.contenedor-mensajes{
+    display: flexbox;
+    align-content: center;
+    padding: 10px;
+}
+.contenedor-mensajes img {
+    margin: 5px;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    margin-left: 100px;
+}
+.perfil1 h2{
+    margin: 5px;
+    font-size: 14px;
+    margin-left: 30px;
+}
+.perfil1{
+    display: flex;
+    align-items: center;
+    background-color: #212936;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+}
+.perfil1:hover {
+    background-color: #9dafff;
+}
